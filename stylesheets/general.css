@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+  /* Colors */
+
+  /** Primary **/
+
+  /*** Text ***/
+  --text-color-primary: hsl(238, 29%, 16%);
+  --text-color-primary-secondary: hsl(14, 88%, 65%);
+
+  /*** Gradient ***/
+  --gradient-primary: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+  /** Neutral **/
+
+  /*** Text ***/
+  --text-color-neutral: hsl(237, 12%, 33%);
+  --text-color-neutral-secondary: hsl(240, 6%, 50%);
+
+  /*** Dividers ***/
+  --divider-color: hsl(240, 5%, 91%);
+
+  /* Typography */
+  --text-weight-normal: 400;
+  --text-weight-bold: 700;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.75rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: var(--text-weight-normal);
+  color: var(--text-color-neutral);
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+main {
+  background: var(--gradient-primary);
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--text-weight-bold);
+  line-height: 1.2;
+}
