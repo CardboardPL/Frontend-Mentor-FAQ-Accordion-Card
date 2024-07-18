@@ -37,9 +37,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: var(--text-weight-normal);
@@ -51,6 +48,7 @@ body {
 main {
   background: var(--gradient-primary);
   min-height: 100vh;
+  padding: 24px;
 }
 
 img {
