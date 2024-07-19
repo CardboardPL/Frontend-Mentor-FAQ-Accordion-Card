@@ -1,0 +1,103 @@
+.faq {
+  position: relative;
+  background-color: white;
+  padding: 131px 24px 48px 24px;
+  border-radius: 24px;
+  box-shadow: 0 20px 24px hsla(238, 29%, 16%, 0.4);
+}
+
+.faq__decorative-img {
+  user-select: none;
+  pointer-events: none;
+  top: -108px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.faq__decorative-img-mobile {
+  position: relative;
+  z-index: 99999999999999;
+  object-fit: contain;
+  height: 180px;
+  width: 237px;
+}
+
+.faq__decorative-img-bg-pattern-mobile {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 109px;
+  width: 238px;
+}
+
+.faq__decorative-img-desktop-wrapper {
+  display: none;
+}
+
+.faq__header {
+  font-size: 32px;
+  letter-spacing: -0.3333333333333333px;
+  color: var(--text-color-primary);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.faq__item {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.faq__item[open] {
+  padding-bottom: 17px;
+}
+ 
+.faq__item-question {
+  font-size: 13px;
+  letter-spacing: 0.08571428571428572px;
+  line-height: 1.5385;
+  user-select: none;
+  position: relative;
+  list-style-type: none;
+  padding-right: 24px;
+  cursor: pointer;
+}
+
+.faq__item-question::after {
+  content: url("../images/icon-arrow-down.svg");
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.15s linear;
+}
+
+.faq__item[open] > .faq__item-question::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq__item[open] > .faq__item-question {
+  font-weight: var(--text-weight-bold);
+  color: var(--text-color-primary);
+}
+
+.faq__item-question:hover,
+.faq__item[open] > .faq__item-question:hover {
+  color: var(--text-color-primary-secondary);
+}
+
+.faq__item-answer {
+  letter-spacing: 0.10433689503456946px;
+  line-height: 1.525;
+  color: var(--text-color-neutral-secondary);
+  padding-right: 24px;
+  height: 0;
+  margin-top: 8px;
+  overflow: hidden;
+  transition: height 0.15s ease-in-out;
+}
+
+.faq__item-answer::first-line {
+  letter-spacing: 0.023255813953488372px;
+}

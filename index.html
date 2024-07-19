@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./stylesheets/general.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/faq.css">
+  <script src="./scripts/faq.js" type="text/javascript" defer></script>
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,32 +20,41 @@
   <main>
     <section class="faq">
       <div class="faq__decorative-img" aria-hidden="true">
-        <img src="./images/illustration-box-desktop.svg" alt="Illustration of a box">
+        <div class="faq__decorative-img-mobile-wrapper">
+          <img class="faq__decorative-img-mobile" src="./images/illustration-woman-online-mobile.svg" alt="">
+          <img class="faq__decorative-img-bg-pattern-mobile" src="./images/bg-pattern-mobile.svg" alt="">
+        </div>
+        
+        <div class="faq__decorative-img-desktop-wrapper">
+          <img class="faq__decorative-img-desktop" src="./images/illustration-woman-online-desktop.svg" alt="">
+          <img class="faq_-decorative-img-box-desktop" src="./images/illustration-box-desktop.svg" alt="">
+          <img class="faq__decorative-img-bg-pattern-desktop" src="./images/bg-pattern-desktop.svg", alt="">
+        </div>
       </div>
       <h1 class="faq__header">FAQ</h1>
 
       <details class="faq__item">
-        <summary class="faq__item-question">How many team members can I invite?</summary>
+        <summary class="faq__item-question js-faq__item-question">How many team members can I invite?</summary>
         <p class="faq__item-answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
       </details>
 
       <details class="faq__item">
-        <summary class="faq__item-question">What is the maximum file upload size?</summary>
+        <summary class="faq__item-question js-faq__item-question">What is the maximum file upload size?</summary>
         <p class="faq__item-answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
       </details>
 
       <details class="faq__item">
-        <summary class="faq__item-question">How do I reset my password?</summary>
+        <summary class="faq__item-question js-faq__item-question">How do I reset my password?</summary>
         <p class="faq__item-answer">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
       </details>
       
       <details class="faq__item">
-        <summary class="faq__item-question">Can I cancel my subscription?</summary>
+        <summary class="faq__item-question js-faq__item-question">Can I cancel my subscription?</summary>
         <p class="faq__item-answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
       </details>
       
       <details class="faq__item">
-        <summary class="faq__item-question">Do you provide additional support?</summary>
+        <summary class="faq__item-question js-faq__item-question">Do you provide additional support?</summary>
         <p class="faq__item-answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
       </details>
     </section>
