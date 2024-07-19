@@ -42,13 +42,13 @@ body {
   font-weight: var(--text-weight-normal);
   color: var(--text-color-neutral);
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.525;
 }
 
 main {
   background: var(--gradient-primary);
   min-height: 100vh;
-  padding: 24px;
+  padding: 148px 24px 48px 24px;
 }
 
 img {
