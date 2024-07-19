@@ -17,8 +17,6 @@
 }
 
 .faq__decorative-img-mobile {
-  position: relative;
-  z-index: 99999999999999;
   object-fit: contain;
   height: 180px;
   width: 237px;
