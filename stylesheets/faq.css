@@ -4,6 +4,7 @@
   padding: 131px 24px 48px 24px;
   border-radius: 24px;
   box-shadow: 0 20px 24px hsla(238, 29%, 16%, 0.4);
+  margin: 0 auto;
 }
 
 .faq__decorative-img {
@@ -57,10 +58,11 @@
   font-size: 13px;
   letter-spacing: 0.08571428571428572px;
   line-height: 1.5385;
-  user-select: none;
   position: relative;
   list-style-type: none;
+  margin-left: 1px;
   padding-right: 24px;
+  user-select: none;
   cursor: pointer;
 }
 
