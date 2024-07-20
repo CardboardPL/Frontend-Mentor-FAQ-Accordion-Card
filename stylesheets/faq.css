@@ -84,9 +84,9 @@
 }
 
 .faq__item-question:hover,
-.faq__item-question:focus,
+.faq__item-question:focus-visible,
 .faq__item[open] > .faq__item-question:hover,
-.faq__item[open] > .faq__item-question:focus {
+.faq__item[open] > .faq__item-question:focus-visible {
   color: var(--text-color-primary-secondary);
 }
 
