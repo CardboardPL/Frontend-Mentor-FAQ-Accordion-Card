@@ -1,9 +1,10 @@
 .faq {
   position: relative;
   background-color: white;
+  max-width: 920px;
   padding: 131px 24px 48px 24px;
   border-radius: 24px;
-  box-shadow: 0 20px 24px hsla(238, 29%, 16%, 0.4);
+  box-shadow: 0 24px 48px hsla(238, 29%, 16%, 0.47);
   margin: 0 auto;
 }
 
@@ -83,7 +84,9 @@
 }
 
 .faq__item-question:hover,
-.faq__item[open] > .faq__item-question:hover {
+.faq__item-question:focus,
+.faq__item[open] > .faq__item-question:hover,
+.faq__item[open] > .faq__item-question:focus {
   color: var(--text-color-primary-secondary);
 }
 
@@ -100,4 +103,90 @@
 
 .faq__item-answer::first-line {
   letter-spacing: 0.023255813953488372px;
+}
+
+@media (min-width: 989px) {
+  .faq {
+    right: -22px;
+    padding: 64px 94px 83px 94px;
+  }
+
+  .faq > div:nth-child(2) {
+    max-width: 351px;
+    margin-left: auto;
+  }
+
+  .faq__decorative-img {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+  }
+
+  .faq__decorative-img-mobile-wrapper {
+    display: none;
+  }
+
+  .faq__decorative-img-desktop-wrapper {
+    display: block;
+  }
+
+  .faq__decorative-img-desktop-wrapper * {
+    position: absolute;
+  }
+
+  .faq__decorative-img-desktop-inner-wrapper {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
+  .faq__decorative-img-desktop {
+    object-fit: cover;
+    height: 359px;
+    width: auto;
+    left: -84px;
+    top: 70px;
+    z-index: 2;
+  }
+
+  .faq__decorative-img-bg-pattern-desktop {
+    height: 945px;
+    width: 966px;
+    object-fit: cover;
+    top: -295px;
+    left: -577px;
+  }
+
+  .faq__decorative-img-box-desktop {
+    object-fit: cover;
+    height: 186px;
+    width: 185px;
+    left: -91px;
+    top: 204px;
+    z-index: 3;
+  }
+
+  .faq__header {
+    text-align: left;
+    margin-bottom: 22px;
+  }
+
+  .faq__item {
+    padding: 14.23px 0;
+  }
+
+  .faq__item-question {
+    font-size: 14px;
+    padding-right: 32px;
+  }
+
+  .faq__item-question::after {
+    margin-right: 16px;
+  }
+
+  .faq__item-answer {
+    margin-top: 7.6333px;
+  }
 }
