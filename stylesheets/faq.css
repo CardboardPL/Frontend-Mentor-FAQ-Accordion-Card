@@ -65,6 +65,14 @@
   cursor: pointer;
 }
 
+.faq__item-question::marker {
+  content: '';
+}
+
+.faq__item-question::-webkit-details-marker {
+  content: '';
+}
+
 .faq__item-question::after {
   content: url("../images/icon-arrow-down.svg");
   position: absolute;

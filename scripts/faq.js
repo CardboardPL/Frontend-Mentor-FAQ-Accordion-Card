@@ -26,6 +26,7 @@ function toggleFAQAnswer(event) {
   }
 }
 
-document.querySelectorAll('.js-faq__item-question').forEach(element => {
+document.querySelectorAll('.js-faq__item-question').forEach((element, index) => {
   element.addEventListener('click', toggleFAQAnswer);
+  if (index === 1) element.click();
 });
