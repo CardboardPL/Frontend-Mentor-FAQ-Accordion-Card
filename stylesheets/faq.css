@@ -52,6 +52,11 @@
 .faq__item[open] {
   padding-bottom: 17px;
 }
+
+.faq > div:nth-child(2) {
+  max-width: 351px;
+  margin-left: auto;
+}
  
 .faq__item-question {
   font-size: 13px;
@@ -65,11 +70,9 @@
   cursor: pointer;
 }
 
-.faq__item-question::marker {
-  content: '';
-}
-
+.faq__item-question::marker,
 .faq__item-question::-webkit-details-marker {
+  display: none;
   content: '';
 }
 
@@ -117,11 +120,6 @@
   .faq {
     right: -22px;
     padding: 64px 94px 83px 94px;
-  }
-
-  .faq > div:nth-child(2) {
-    max-width: 351px;
-    margin-left: auto;
   }
 
   .faq__decorative-img {
