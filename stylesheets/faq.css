@@ -55,7 +55,7 @@
 
 .faq > div:nth-child(2) {
   max-width: 351px;
-  margin-left: auto;
+  margin: 0 auto;
 }
  
 .faq__item-question {
@@ -116,10 +116,13 @@
   letter-spacing: 0.023255813953488372px;
 }
 
-@media (min-width: 989px) {
+@media (min-width: 790px) {
   .faq {
-    right: -22px;
-    padding: 64px 94px 83px 94px;
+    padding: 64px 48px 83px 48px;
+  }
+
+  .faq > div:nth-child(2) {
+    margin:  0 0 0 auto;
   }
 
   .faq__decorative-img {
@@ -150,33 +153,104 @@
 
   .faq__decorative-img-desktop {
     object-fit: cover;
-    height: 359px;
+    height: 280px;
     width: auto;
-    left: -84px;
+    left: -55px;
     top: 70px;
     z-index: 2;
+    transition: all 0.15s ease-in-out;
   }
 
   .faq__decorative-img-bg-pattern-desktop {
-    height: 945px;
-    width: 966px;
     object-fit: cover;
+    height: 879px;
+    width: 900px;
     top: -295px;
     left: -577px;
+    transition: all 0.15s ease-in-out;
   }
 
   .faq__decorative-img-box-desktop {
     object-fit: cover;
-    height: 186px;
-    width: 185px;
-    left: -91px;
-    top: 204px;
+    height: 136px;
+    width: 129px;
+    left: -50px;
+    top: 175px;
     z-index: 3;
+    transition: all 0.15s ease-in-out;
   }
 
   .faq__header {
     text-align: left;
     margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 860px) {
+  .faq__decorative-img-desktop {
+    height: 330px;
+  }
+
+  .faq__decorative-img-bg-pattern-desktop {
+    height: 929px;
+    width: 950px;
+  }
+
+  .faq__decorative-img-box-desktop {
+    height: 140px;
+    width: 124px;
+    left: -45px;
+    top: 215px;
+  }
+}
+
+@media (min-width: 920px) {
+  .faq__decorative-img-desktop {
+    height: 359px;
+    left: -57px;
+    top: 70px;
+  }
+
+  .faq__decorative-img-bg-pattern-desktop {
+    height: 945px;
+    width: 966px;
+    top: -295px;
+    left: -550px;
+  }
+
+  .faq__decorative-img-box-desktop {
+    height: 186px;
+    width: 185px;
+    left: -66px;
+    top: 204px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .faq {
+    right: -22px;
+    padding-right: 94px;
+    padding-left: 94px;
+  }
+
+  .faq__decorative-img-desktop {
+    height: 359px;
+    left: -84px;
+    top: 70px;
+  }
+
+  .faq__decorative-img-bg-pattern-desktop {
+    height: 945px;
+    width: 966px;
+    top: -295px;
+    left: -577px;
+  }
+
+  .faq__decorative-img-box-desktop {
+    height: 186px;
+    width: 185px;
+    left: -91px;
+    top: 204px;
   }
 
   .faq__item {
