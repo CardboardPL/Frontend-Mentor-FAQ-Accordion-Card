@@ -48,7 +48,7 @@ body {
 main {
   background: var(--gradient-primary);
   min-height: 100vh;
-  padding: 148px 24px 48px 24px;
+  padding: 12.33333333333333rem 2rem 4rem 2rem;
 }
 
 img {
@@ -61,8 +61,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-@media (min-width: 989px) {
+@media (min-width: 790px) {
   main {
-    padding-top: 129px;
+    padding-top: 10.75rem;
   }
 }
